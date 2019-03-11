@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  padding: 10px 0px;
+  padding: 40px 0px;
 }
 
 /* ---- Typography ---- */
@@ -59,14 +59,59 @@ h1, h2, h3, li {
 }
 
 /* ---- Contenders ---- */
+
 #contenders {
   margin: 15px 0px;
 }
 
 .contender-name {
   margin: 5px 0px;
+  font-weight: 600;
 }
 
 ul {
   padding: 0px;
+  list-style-type: none;
+}
+
+/* ---- Web Version ---- */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* ---- Typography ---- */
+  body {
+    font-size: 2em;
+  }
+
+  .small-text {
+    font-size: 0.6em;
+  }
+
+  h3, .contender-name {
+    font-size: 0.8em;
+  }
+
+  /* ---- General Structures ---- */
+  
+  #ranking-contenders-container {
+    display: flex;
+  }
+
+  /* ---- Ranking ---- */
+  .crown {
+    width: 160px; 
+  }
+
+  #ranking {
+    margin: 50px 0px;
+    width: 65%;
+  }
+  
+  /* ---- Contenders ---- */
+
+  #contenders {
+    width: 35%;
+    padding: 110px 50px 80px 0px;
+  }
+
 }
