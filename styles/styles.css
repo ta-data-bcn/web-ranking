@@ -46,8 +46,12 @@ h1, h2, h3, li {
   width: 100%;
 }
 
-#second-place, #third-place {
+#second-place {
   width: 50%;
+}
+
+.third-place {
+  width: 25%;
 }
 
 .place {
